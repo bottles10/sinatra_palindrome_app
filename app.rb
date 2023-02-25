@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'bottles_palindrome'
 
 get '/' do
     @title = 'Home'
@@ -11,6 +12,11 @@ get '/about' do
 end
 
 get '/palindrome' do
-    @title = "Palindrome detector"
+    @title = "Palindrome Detector"
     erb :palindrome
+end
+
+post '/check' do
+    @phrase = params[:phrase]
+    erb :result
 end

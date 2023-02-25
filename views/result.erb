@@ -1,0 +1,12 @@
+<h1>Palindrome Result</h1>
+
+<% if @phrase.palindrome? %>
+    <div class="result result-success">
+        <p><em>"<%= @phrase %>"</em> is a palindrome!</p>
+
+    </div>
+<% else %>
+    <div class="result result-fail">
+        <p><em>"<%= @phrase %>"</em> isn't a palindrome</p>    
+    </div>
+<% end %>

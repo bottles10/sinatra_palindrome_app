@@ -33,6 +33,6 @@ class PalindromeAppTest < Minitest::Test
         assert last_response.ok?
         assert doc(last_response).at_css('h1')
         title_content = doc(last_response).at_css('title').content
-        assert_equal "#{@base_title}Palindrome detector", title_content
+        assert_equal "#{@base_title}Palindrome Detector", title_content
     end
 end
