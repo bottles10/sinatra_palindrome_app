@@ -12,9 +12,9 @@
             <img src="/images/logo_b.png" alt="Learn Enough logo">
         </a>
         <div class="container">
+            <!-- page-specific content -->
+            <%= erb :navigation %>
             <div class="content">
-                <!-- page-specific content -->
-                <%= erb :navigation %>
                 <%= yield %>
             </div>
         </div>

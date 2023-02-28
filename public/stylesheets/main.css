@@ -98,3 +98,9 @@ p {
 .result-fail{
   background-color: #e67642;
 }
+
+textarea::placeholder {
+  text-align: center;
+  color: rebeccapurple;
+  padding: 50px;
+}
